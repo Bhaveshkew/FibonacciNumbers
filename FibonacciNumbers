@@ -1,0 +1,19 @@
+# FibonacciNumbers
+
+numberOfTerms=int(input("Enter the number of terms : "))
+a,b=0,1
+count=0
+if numberOfTerms<=0:
+    print("Please enter a positive integer ")
+elif numberOfTerms==1:
+    print("Fibonacci numbers upto "+numberOfTerms+" : ")
+    print(a)
+else:
+    print("Fibonacci numbers : ")
+    while count<=numberOfTerms:
+        print(a)
+        c=a+b
+        a=b
+        b=c
+        count=count+1
+
